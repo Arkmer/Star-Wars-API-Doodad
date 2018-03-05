@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MVC (views/routes)</title>
+    <script src="vendors/angular/angular.js"></script>
+    <script src="vendors/angular-route/angular-route.js"></script>
+    <script src="scripts/client.js"></script>
+    <script src="controllers/searchController.js"></script>
+    <script src="controllers/favoritesController.js"></script>
+    <script src="services/swapiService.js"></script>
+</head>
+    <body ng-app="routesApp">
+            <a href="/#!">Search</a>
+            <a href="/#!favorites">Favorites</a>
+        </nav>
+        <main ng-view>
+            <!-- Things appear here! -->
+        </main>
+    </body>
+</html>
