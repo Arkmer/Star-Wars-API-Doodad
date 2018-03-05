@@ -2,4 +2,6 @@ app.controller('searchController',['swapiService', '$scope', function(swapiServi
     console.log('searchController');
     let self = this;
     $scope.header = 'Search Page!';
+
+    self.cardArray = swapiService.cardArray;
 }]);
